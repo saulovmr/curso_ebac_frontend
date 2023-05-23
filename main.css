@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: rgb(212, 211, 211);
+    text-align: center;
+    margin-top: 250px;
+}
+
+h1 {
+    padding: 16px 0;
+    margin-bottom: 8px;
+}
+
+form {
+    padding: 16px;
+}
+
+input, button {
+    padding: 8px;
+    margin: 2px rgba(0,0,0,0.3);
+}
+
+button {
+    cursor: pointer;
+}
+
+ul li {
+    padding: 8px 0;
+}
+
+ul li:hover .adiciona-tarefa {
+    text-decoration: line-through;
+}
+
