@@ -1,12 +1,7 @@
-function linhaTexto(){
-    const linha = document.querySelector('.adiciona-linha');
-    linha.style.textDecoration = "line-through";
-    }
-
 $('form').on('submit', function(e){
     e.preventDefault();
     const enderecoNovaTarefa = $('#nova-tarefa').val();
-    const novaTarefa = $('<li onclick="linhaTexto()"></li>');
+    const novaTarefa = $('<li onclick="linhaTexto(this)"></li>');
     $(`${enderecoNovaTarefa}`).appendTo(novaTarefa);
     $(`<li">${enderecoNovaTarefa}</li>`).appendTo(novaTarefa);
     $(novaTarefa).appendTo('ul');
@@ -14,4 +9,8 @@ $('form').on('submit', function(e){
     $('#nova-tarefa').val('');
     
 })
+
+function linhaTexto(linha){
+    linha.style.textDecoration = "line-through";
+    }
 
